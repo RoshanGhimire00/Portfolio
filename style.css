@@ -85,3 +85,7 @@ nav ul li a:hover{
     background-size: cover;
     border-radius: 50%; 
 }
+.secondSection{
+    max-width:80vw;
+    margin:auto;
+}
