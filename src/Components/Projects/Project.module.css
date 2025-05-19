@@ -1,0 +1,115 @@
+@import "./../../vars.css";
+.container {
+  padding: 20px;
+  max-width: 830px;
+  margin: auto;
+  color: white;
+}
+.heading {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.projectsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  
+}
+.projectCard {
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+   background-color: var(--color-secondary);
+}
+.projectImage {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.projectTitle {
+  font-size: 20px;
+  margin: 10px 0;
+  text-decoration: underline;
+  color: rgb(220, 66, 66);
+  font-weight: bold;
+}
+.projectDescription {
+  font-size: 16px;
+  color: #f8f6f6;
+}
+.skillsList {
+  list-style-type: none;
+  padding: 0;
+}
+.language {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(203, 236, 54);
+}
+.skillItem {
+  background-color: #4c69ea;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px;
+  font-size: 14px;
+}
+.linksWrapper {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.projectLink {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.projectLink:hover {
+  background-color: #0056b3;
+}
+@media screen and (max-width: 830px) {
+  .heading {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .projectsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCard {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .skillItem {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .projectLink {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "title": "Food Access Management System",
+      "imageSrc": "projects/project.png",
+      "description": "Food access management system is a online platform that helps to donate the access food and can uplift or can order the needed food that is available in the platform.",
+      "skills": ["HTML", "CSS", "JS", "PHP"],
+      "demo": "https://example.com/demo",
+      "source": "https://github.com/RoshanGhimire00/foodAccessManagementSystem"
+    },
+    {
+      "title": "Portfolio",
+      "imageSrc": "projects/project.png",
+      "description": "This is the portfolio of self projects.",
+      "skills": ["ReactJS", "CSS"],
+      "demo": "https://example.com/another-demo",
+      "source": "https://example.com/another-source"
+    }
+  ]
+}

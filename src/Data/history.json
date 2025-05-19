@@ -1,0 +1,11 @@
+{
+  "name": "Durga",
+  "internship": {
+    "company": "DebugSoft",
+    "role": "ReactJS Intern",
+    "start_date": "2025-04-10",
+    "end_date": "2025-07-10",
+    "description": "Worked on ReactJS development, including UI components, state management, and API integrations. Collaborated with the team to build scalable web applications.",
+    "imageSrc":"history/google.png"
+  }
+}

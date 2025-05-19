@@ -1,0 +1,30 @@
+{
+  "name": "Durga",
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Advanced",
+      "imageSrc":"skills/html.png"
+    },
+    {
+      "name": "CSS",
+      "level": "Advanced",
+      "imageSrc":"skills/css.png"
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermediate",
+      "imageSrc":"skills/css.png"
+    },
+    {
+      "name": "React",
+      "level": "Intermediate",
+      "imageSrc":"skills/react.png"
+    },
+    {
+      "name": "Node",
+      "level": "Intermediate",
+      "imageSrc":"skills/node.png"
+    }
+  ]
+}
