@@ -14,7 +14,15 @@
       "description": "This is the portfolio of self projects.",
       "skills": ["ReactJS", "CSS"],
       "demo": "https://example.com/another-demo",
-      "source": "https://example.com/another-source"
+      "source": "https://github.com/RoshanGhimire00/Portfolio"
+    },
+     {
+      "title": "Krishi Bazar",
+      "imageSrc": "projects/project.png",
+      "description": "This is the project that is done for the 6th semester of the BCA as a Project II.",
+      "skills": ["ReactJS", "CSS"],
+      "demo": "https://example.com/another-demo",
+      "source": "https://github.com/RoshanGhimire00/Grocery_Store"
     }
   ]
 }

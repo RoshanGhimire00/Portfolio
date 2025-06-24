@@ -1,115 +1,158 @@
-@import "./../../vars.css";
 .container {
-  padding: 20px;
-  max-width: 830px;
-  margin: auto;
-  color: white;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #161c2d, #1d2a3d);
 }
+
 .heading {
   text-align: center;
-  font-size: 40px;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  font-weight: bold;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
 }
+
 .projectsWrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  justify-content: center;
-  
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .projectCard {
-  border: 2px solid #ddd;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-   background-color: var(--color-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.projectCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
 .projectImage {
   width: 100%;
-  max-height: 250px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .projectTitle {
-  font-size: 20px;
-  margin: 10px 0;
-  text-decoration: underline;
-  color: rgb(220, 66, 66);
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  margin: 20px;
 }
+
 .projectDescription {
-  font-size: 16px;
-  color: #f8f6f6;
+  font-size: 1rem;
+  color: #dddddd;
+  margin: 0 20px 10px;
+  line-height: 1.5;
 }
-.skillsList {
-  list-style-type: none;
-  padding: 0;
-}
+
 .language {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: underline;
-  color: rgb(203, 236, 54);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #cccccc;
+  margin: 12px 20px 5px;
 }
+
+.skillsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 0 0 20px;
+  gap: 10px;
+}
+
 .skillItem {
-  background-color: #4c69ea;
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 5px;
-  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #f0f0f0;
+  font-weight: 500;
 }
+
 .linksWrapper {
   display: flex;
-  gap: 15px;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px 20px 20px;
+  flex-wrap: wrap;
 }
+
 .projectLink {
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: #ffffff;
+  font-weight: 500;
   text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .projectLink:hover {
-  background-color: #0056b3;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  transform: scale(1.05);
 }
-@media screen and (max-width: 830px) {
+
+/* 📱 Responsive Enhancements */
+@media screen and (max-width: 768px) {
   .heading {
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 2.2rem;
   }
 
-  .projectsWrapper {
+  .projectTitle {
+    font-size: 1.3rem;
+    margin: 16px;
+  }
+
+  .projectDescription {
+    font-size: 0.95rem;
+    margin: 0 16px 10px;
+  }
+
+  .language {
+    margin: 10px 16px 5px;
+  }
+
+  .skillsList {
+    padding: 0 16px;
+  }
+
+  .linksWrapper {
     flex-direction: column;
     align-items: center;
+    margin: 12px 16px 20px;
   }
 
-  .projectCard {
-    max-width: 100%;
+  .projectLink {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .heading {
-    font-size: 24px;
-    margin-top: 30px;
+    font-size: 1.8rem;
   }
 
-  .skillItem {
-    font-size: 12px;
-    padding: 3px 8px;
+  .projectImage {
+    height: 180px;
   }
 
-  .projectLink {
-    padding: 6px 10px;
-    font-size: 14px;
+  .projectCard {
+    margin: 0 10px;
   }
 }
